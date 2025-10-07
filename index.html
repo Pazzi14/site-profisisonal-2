@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcela - Enfermagem Especializada em Laserterapia e Feridas</title>
+    <title>Marcela Enfermagem Especializada | Laserterapia e Cicatrização Avançada</title>
+    <meta name="description" content="Especialista em tratamento avançado de feridas, úlceras e laserterapia. Agende sua avaliação com Marcela, enfermeira dermatológica.">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <link rel="stylesheet" href="style.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <a href="https://api.whatsapp.com/send?phone=5511987654321&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Marcela..." class="cta-fixo-agendar" target="_blank" id="ctaFixo">Agendar Via WhatsApp <i class="fab fa-whatsapp"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=5511987654321&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20o%20tratamento%20de%20feridas..." class="cta-fixo-agendar" target="_blank" id="ctaFixo">Agendar Via WhatsApp <i class="fab fa-whatsapp"></i></a>
 
     <header>
         <div class="logo">
@@ -21,120 +21,176 @@
         </div>
         <nav>
             <ul class="menu-desktop">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="tratamentos.html">Tratamentos Avançados</a></li>
                 <li><a href="quem-somos.html">Quem Somos</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contato.html" class="btn-cta-menu">Agende Agora</a></li>
+                <li><a href="contato.html" class="btn-cta-menu">Agende Sua Avaliação</a></li>
             </ul>
+            <button class="menu-mobile-btn" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
-        <button class="menu-mobile-btn"><i class="fas fa-bars"></i></button>
     </header>
 
     <main>
-        <section id="hero-secao" class="hero-secao">
-            <div id="hero-3d-background">
-                </div>
-            <div class="hero-content">
-                <h1>Recupere sua Saúde, Transforme sua Vida.</h1>
-                <p>Laserterapia e Tratamento de Feridas com foco em tecnologia e humanização.</p>
-                <a href="tratamentos.html" class="btn-cta-principal">Conheça os Métodos <i class="fas fa-arrow-right"></i></a>
+        <section id="hero-principal" class="hero-secao">
+            <div class="container hero-content">
+                <p class="hero-tag">Laserterapia e Cuidado Personalizado</p>
+                <h1 class="hero-titulo">Acelere a Cicatrização de Feridas Crônicas com Tecnologia Avançada.</h1>
+                <p class="hero-subtitulo">Recupere sua qualidade de vida. Oferecemos tratamento especializado para úlceras, pés diabéticos e estomias com foco em resultados rápidos e humanizados.</p>
+                <a href="contato.html" class="btn btn-hero">Agendar Avaliação Gratuita <i class="fas fa-arrow-right"></i></a>
             </div>
+            <div class="hero-image-overlay"></div>
         </section>
 
-        <section id="diferenciais-secao" class="secao">
-            <h2>Por Que Escolher a Marcela?</h2>
-            <div class="diferenciais-container">
-                <div class="diferencial-item">
-                    <div class="icone-customizado">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 3L6 14h5l-1 7 8-11h-5l1-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </div>
-                    <h3>Tecnologia Avançada</h3>
-                    <p>Uso de laser de baixa potência para cicatrização acelerada e alívio da dor.</p>
-                </div>
-                <div class="diferencial-item">
-                    <div class="icone-customizado">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3C14.15 3 12 5 12 5s-2.15-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7 7-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </div>
-                    <h3>Abordagem Humanizada</h3>
-                    <p>Atendimento individualizado, com foco total no bem-estar e conforto do paciente.</p>
-                </div>
-                <div class="diferencial-item">
-                    <div class="icone-customizado">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s-8-4-8-10c0-4.42 3.58-8 8-8s8 3.58 8 8c0 6-8 10-8 10z" stroke="currentColor" stroke-width="2"/><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" stroke="currentColor" stroke-width="2"/></svg>
-                    </div>
-                    <h3>Experiência Comprovada</h3>
-                    <p>Anos de dedicação e sucesso no tratamento de feridas complexas e crônicas.</p>
-                </div>
-            </div>
-        </section>
+        <section id="destaques" class="secao">
+            <div class="container">
+                <h2 class="secao-titulo">Nossas Áreas de Excelência</h2>
+                <p class="secao-subtitulo">Foco especializado no que realmente faz a diferença para sua recuperação.</p>
 
-        <section id="depoimentos-secao" class="secao depoimentos-secao">
-            <h2>O Que Dizem Nossos Pacientes</h2>
-            <div class="depoimentos-container">
-                <div class="depoimento-card">
-                    <p class="depoimento-texto">"O tratamento com a Marcela foi essencial na recuperação da minha lesão. O laser fez uma diferença enorme na cicatrização. Recomendo muito!"</p>
-                    <p class="depoimento-autor">— Ana P., 45 anos</p>
-                </div>
-                <div class="depoimento-card">
-                    <p class="depoimento-texto">"Atendimento impecável! O cuidado e a atenção foram além do esperado. Me senti segura e bem orientada durante todo o processo."</p>
-                    <p class="depoimento-autor">— João M., 62 anos</p>
-                </div>
-                <div class="depoimento-card">
-                    <p class="depoimento-texto">"A tecnologia usada pela Marcela é de ponta. Vi resultados rápidos e sem dor, algo que eu não esperava. Profissionalismo total."</p>
-                    <p class="depoimento-autor">— Sofia R., 33 anos</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <i class="fas fa-star-of-life"></i>
+                        <h3>Tratamento de Úlceras Crônicas</h3>
+                        <p>Cuidado meticuloso para úlceras venosas, arteriais e de pressão, utilizando curativos de última geração.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-radiation"></i>
+                        <h3>Laserterapia de Baixa Potência</h3>
+                        <p>Tecnologia a laser que reduz a dor e a inflamação, acelerando a regeneração celular em feridas complexas.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-shoe-prints"></i>
+                        <h3>Pé Diabético e Prevenção</h3>
+                        <p>Avaliação de risco, orientação e tratamento especializado para evitar complicações graves em pacientes diabéticos.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="faq-resumido-secao secao">
-            <h2>Dúvidas Comuns (FAQ)</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <button class="faq-pergunta" aria-expanded="false" data-target="resposta1">
-                        O que é Laserterapia e como ela funciona?
-                    </button>
-                    <div class="faq-resposta" id="resposta1">
-                        <p>É uma técnica que utiliza luz de baixa intensidade para estimular a regeneração celular, acelerando a cicatrização, reduzindo a dor e a inflamação de feridas e lesões.</p>
+        <section id="cta-secundario" class="secao bg-azul-profundo cta-secundario-container">
+            <div class="container">
+                <div class="cta-secundario-content">
+                    <div class="cta-text">
+                        <h2 class="cta-titulo">Cuidado Humanizado e Baseado em Evidências.</h2>
+                        <p class="cta-subtitulo">Marcela, enfermeira dermatológica, alia conhecimento científico e tecnologia para tratar a causa da sua ferida.</p>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-pergunta" aria-expanded="false" data-target="resposta2">
-                        Quais tipos de feridas a Marcela trata?
-                    </button>
-                    <div class="faq-resposta" id="resposta2">
-                        <p>Tratamos feridas crônicas (úlceras de pressão, úlceras venosas, pé diabético), feridas agudas (queimaduras, pós-cirúrgicas) e lesões dermatológicas diversas.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-pergunta" aria-expanded="false" data-target="resposta3">
-                        O tratamento é doloroso?
-                    </button>
-                    <div class="faq-resposta" id="resposta3">
-                        <p>Não. A Laserterapia é não invasiva e geralmente indolor. Muitos pacientes relatam alívio imediato da dor e do desconforto nas primeiras sessões.</p>
+                    <div class="cta-beneficios">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Cicatrização Rápida e Eficaz</li>
+                            <li><i class="fas fa-check-circle"></i> Alívio Imediato da Dor</li>
+                            <li><i class="fas fa-check-circle"></i> Atendimento Personalizado</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <a href="faq.html" class="btn-cta-secundario">Ver Todas as Dúvidas <i class="fas fa-question-circle"></i></a>
         </section>
 
+        <section id="formulario-interesse" class="secao bg-prata-claro">
+            <div class="container form-layout">
+                <div class="form-text-content">
+                    <h2 class="secao-titulo">Não Sabe por Onde Começar?</h2>
+                    <p class="secao-subtitulo">Preencha o formulário abaixo e nossa especialista entrará em contato para orientar o seu primeiro passo.</p>
+                    <ul class="lista-contato">
+                        <li><i class="fas fa-phone-alt"></i> (11) 4567-8901</li>
+                        <li><i class="fab fa-whatsapp"></i> +55 (11) 98765-4321</li>
+                        <li><i class="fas fa-envelope"></i> contato@marcelaenfermagem.com</li>
+                    </ul>
+                </div>
+                <div class="form-container form-interesse-home">
+                    <h3 class="secao-titulo-small">Fale Conosco Rapidamente</h3>
+                    <form id="interestForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="nome-home">Seu Nome:</label>
+                            <input type="text" id="nome-home" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone-home">Telefone / WhatsApp:</label>
+                            <input type="tel" id="telefone-home" name="telefone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto-home">Interesse Principal:</label>
+                            <select id="assunto-home" name="assunto" required>
+                                <option value="" disabled selected>Selecione o tratamento</option>
+                                <option value="avaliacao">Avaliação de Ferida</option>
+                                <option value="laserterapia">Laserterapia</option>
+                                <option value="estomias">Cuidado com Estomias</option>
+                                <option value="geral">Outro/Dúvida Geral</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-enviar">Solicitar Contato</button>
+                        <p id="form-feedback-home" class="form-feedback" style="display: none;"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="secao">
+            <div class="container">
+                <h2 class="secao-titulo">O Que Nossos Pacientes Dizem</h2>
+                <p class="secao-subtitulo">Histórias reais de recuperação e confiança no nosso trabalho.</p>
+
+                <div class="depoimentos-slider">
+                    <div class="depoimento-card">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="depoimento-texto">"Eu já havia tentado de tudo para curar minha úlcera, mas só a laserterapia da Marcela trouxe o resultado que eu precisava. Profissionalismo e carinho em cada sessão."</p>
+                        <div class="depoimento-autor">
+                            <i class="fas fa-user-circle"></i>
+                            <p>Dona Maria A. | Úlcera Venosa</p>
+                        </div>
+                    </div>
+                    <div class="depoimento-card">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="depoimento-texto">"O cuidado com a minha estomia era um desafio. Recebi orientações claras e um suporte incrível que transformou minha qualidade de vida. Recomendo muito!"</p>
+                        <div class="depoimento-autor">
+                            <i class="fas fa-user-circle"></i>
+                            <p>Sr. João C. | Paciente de Estomia</p>
+                        </div>
+                    </div>
+                    <div class="depoimento-card">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="depoimento-texto">"Desde o primeiro contato senti segurança. O tratamento com laser na ferida do meu pé diabético foi rápido e indolor. Gratidão à equipe!"</p>
+                        <div class="depoimento-autor">
+                            <i class="fas fa-user-circle"></i>
+                            <p>Dona Tereza S. | Pé Diabético</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta-final" class="secao cta-final-container">
+            <div class="container cta-final-content">
+                <h2 class="cta-titulo-final">Dê o Primeiro Passo para a Sua Cicatrização.</h2>
+                <p class="cta-subtitulo-final">Agende sua avaliação e descubra o tratamento ideal para sua ferida.</p>
+                <a href="contato.html" class="btn btn-cta-final">Agendar Minha Avaliação <i class="fas fa-calendar-alt"></i></a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div class="footer-grid">
+        <div class="container footer-grid">
             <div class="footer-col-1">
-                <h3>Marcela Enfermagem</h3>
-                <p>Especializada em laserterapia e tratamentos avançados para feridas.</p>
+                <h2 class="footer-logo">Marcela</h2>
+                <p>Enfermagem Especializada em Laserterapia e Cicatrização Avançada de Feridas.</p>
                 <div class="social-icons">
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511987654321" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="footer-col-2">
                 <h3>Links Úteis</h3>
                 <ul>
-                    <li><a href="tratamentos.html">Nossos Serviços</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tratamentos.html">Serviços</a></li>
                     <li><a href="quem-somos.html">Sobre a Marcela</a></li>
                     <li><a href="contato.html">Localização e Contato</a></li>
                     <li><a href="faq.html">Perguntas Frequentes</a></li>
@@ -152,16 +208,16 @@
         </div>
     </footer>
 
-
     <div id="cookie-banner" class="cookie-banner-fixo" style="display: none;">
-        Este site utiliza cookies para garantir a melhor experiência e analisar o nosso tráfego. Ao continuar, você concorda com o uso de cookies e com a nossa <a href="politica-privacidade.html" style="color: #66b8a7; text-decoration: underline;">Política de Privacidade</a>.
+        Este site utiliza cookies para garantir a melhor experiência e analisar o nosso tráfego. Ao continuar, você concorda com o uso de cookies e com a nossa <a href="politica-privacidade.html">Política de Privacidade</a>.
         <button onclick="aceitarCookies()" type="button">Aceitar e Fechar</button>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <script src="scroll-animations.js"></script>
+    <script src="tracking.js"></script>
+    <script src="faq-accordion.js"></script>
     <script src="script.js"></script>
-    
+    <script src="contact-form.js"></script>
 </body>
 </html>
