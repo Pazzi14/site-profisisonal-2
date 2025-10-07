@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato e Agendamento - Marcela Enfermagem Especializada</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="https://api.whatsapp.com/send?phone=5511987654321&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20o%20tratamento%20de%20feridas..." class="cta-fixo-agendar" target="_blank" id="ctaFixo">Agendar Via WhatsApp <i class="fab fa-whatsapp"></i></a>
+
+    <header>
+        <div class="logo">
+            <h1>Marcela <br><span>Enfermagem Especializada</span></h1>
+        </div>
+        <nav>
+            <ul class="menu-desktop">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tratamentos.html">Tratamentos Avançados</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html" class="btn-cta-menu active">Agende Sua Avaliação</a></li>
+            </ul>
+            <button class="menu-mobile-btn" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-contato" class="hero-secao bg-azul-profundo hero-small-contact">
+            <div class="container hero-content text-align-center color-branco no-shadow">
+                <h2 class="secao-titulo-large">Agende a Sua Avaliação Agora</h2>
+                <p class="hero-subtitulo-faq">Estamos prontos para te atender via WhatsApp, telefone ou por meio do formulário abaixo.</p>
+            </div>
+        </section>
+
+        <section id="info-contato" class="secao">
+            <div class="container">
+                <h2 class="secao-titulo">Nossos Canais de Atendimento</h2>
+                <p class="secao-subtitulo">Escolha o canal de sua preferência para dar o primeiro passo na sua recuperação.</p>
+
+                <div class="info-cards-container">
+
+                    <a href="https://api.whatsapp.com/send?phone=5511987654321&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o..." target="_blank" class="info-card info-card-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp (Preferencial)</h3>
+                        <p>+55 (11) 98765-4321</p>
+                        <p class="info-card-cta">Clique para iniciar a conversa.</p>
+                    </a>
+
+                    <a href="tel:+551145678901" class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Telefone</h3>
+                        <p>(11) 4567-8901</p>
+                        <p class="info-card-details">Atendimento comercial de Seg. a Sex.</p>
+                    </a>
+
+                    <a href="mailto:contato@marcelaenfermagem.com" class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>contato@marcelaenfermagem.com</p>
+                        <p class="info-card-details">Respondemos em até 24 horas úteis.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulario-localizacao" class="secao bg-prata-claro">
+            <div class="container">
+                
+                <div class="contato-layout">
+                    
+                    <div class="form-container">
+                        <h3 class="secao-titulo-small">Envie uma Mensagem Rápida</h3>
+                        
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                            <div class="form-group">
+                                <label for="nome">Seu Nome Completo:</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Seu Melhor E-mail:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone / WhatsApp:</label>
+                                <input type="tel" id="telefone" name="telefone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="assunto">Qual é o seu interesse principal?</label>
+                                <select id="assunto" name="assunto" required>
+                                    <option value="" disabled selected>Selecione uma opção</option>
+                                    <option value="avaliacao">Agendar Avaliação de Ferida</option>
+                                    <option value="estomias">Cuidado com Estomias</option>
+                                    <option value="incontinencia">Tratamento de Incontinência</option>
+                                    <option value="geral">Dúvida Geral</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem (descreva sua condição):</label>
+                                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                            
+                            <p id="form-feedback" class="form-feedback" style="display: none;"></p>
+                        </form>
+                    </div>
+
+                    <div class="mapa-container">
+                        <h3 class="secao-titulo-small">Onde Estamos Localizados</h3>
+                        <p class="localizacao-detalhe">Atendimento Clínico (Apenas com Hora Marcada):</p>
+                        <p class="localizacao-endereco">Rua da Cicatrização, 123 - Sala 501</p>
+                        <p class="localizacao-cidade">Vila Nova Esperança, São Paulo - SP</p>
+
+                        <div class="mapa-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>Google Maps Integrado Aqui (Placeholder)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col-1">
+                <h2 class="footer-logo">Marcela</h2>
+                <p>Enfermagem Especializada em Laserterapia e Cicatrização Avançada de Feridas.</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511987654321" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tratamentos.html">Serviços</a></li>
+                    <li><a href="quem-somos.html">Sobre a Marcela</a></li>
+                    <li><a href="contato.html">Localização e Contato</a></li>
+                    <li><a href="faq.html">Perguntas Frequentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-3">
+                <h3>Informações</h3>
+                <p><strong>Atendimento:</strong> Seg. a Sex., 9h às 18h</p>
+                <p><strong>Telefone:</strong> (11) 98765-4321</p>
+                <p><strong>Email:</strong> contato@marcelaenfermagem.com</p>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2025 Marcela Enfermagem Especializada. Todos os direitos reservados. | <a href="politica-privacidade.html">Política de Privacidade</a></p>
+        </div>
+    </footer>
+
+
+    <div id="cookie-banner" class="cookie-banner-fixo" style="display: none;">
+        Este site utiliza cookies para garantir a melhor experiência e analisar o nosso tráfego. Ao continuar, você concorda com o uso de cookies e com a nossa <a href="politica-privacidade.html">Política de Privacidade</a>.
+        <button onclick="aceitarCookies()" type="button">Aceitar e Fechar</button>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scroll-animations.js"></script>
+    <script src="tracking.js"></script>
+    <script src="faq-accordion.js"></script>
+    <script src="script.js"></script>
+    <script src="contact-form.js"></script>
+</body>
+</html>
